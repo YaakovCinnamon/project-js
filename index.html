@@ -1,0 +1,44 @@
+
+
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/img/logo.png" alt="לוגו" class="logo">
+        <h1>ברוכים הבאים</h1>
+        <h2>לעולם המשחקים</h2>
+        <button id="signup_mode">הרשמה</button>
+        <button id="login_mode">כניסה</button>
+        
+        <div class="newUser" style="display: none;">
+            <h3>הרשמה</h3>
+            <form id="signupForm" action="" method="POST">
+                <input type="text" id="myNameOfNewUser" name="firstname" placeholder="שם פרטי" required>
+                <input type="password" id="myPasswrdOfNewUser" name="password" placeholder="סיסמה" required>
+                <input type="text" id="nickname" name="nickname" placeholder="כינוי" required>
+                <input type="email" id="myEmail" name="email" placeholder="אימייל" required>
+                <button id="signup_button" type="submit">הרשמה</button>
+            </form>
+        </div>
+        
+        <div class="userExist" style="display: none;">
+            <h3>כניסה</h3>
+            <form id="loginForm" action="" method="POST">
+                <input type="text" id="myName" name="firstname" placeholder="שם פרטי" required>
+                <input type="password" id="myPasswrd" name="password" placeholder="סיסמה" required>
+                <button id="login_button" type="submit">כניסה</button>
+            </form>
+        </div>
+        
+        <div class="message"></div>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
